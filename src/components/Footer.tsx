@@ -32,7 +32,7 @@ function Footer() {
             </button>
           </div>
           <div className="mt-[20px]">
-            <p className="font-inter text-[18px] font-[600] underline">
+            <p className="font-inter text-[16px] font-[600] underline">
               Socials So You Stay Connected To Us!
             </p>
 
