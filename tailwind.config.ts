@@ -13,8 +13,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily:{
+        inter: ["Inter", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"]
+      },
+      colors: {
+        primary: "#268574"
+      }
     },
   },
   plugins: [],
+  darkMode: "class"
 };
 export default config;
