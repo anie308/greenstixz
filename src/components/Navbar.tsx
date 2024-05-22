@@ -8,7 +8,7 @@ import { HiOutlineBars3 } from "react-icons/hi2";
 function Navbar() {
   const [show, setShow] = useState(false);
   return (
-    <div className=" shadow sticky top-0 z-30 dark:bg-black bg-white lg:p-[15px_80px] flex items-center justify-between">
+    <div className=" shadow sticky top-0 z-30 dark:bg-[#242627] bg-white lg:p-[15px_80px] flex items-center justify-between">
       <div className="p-[15px_20px] lg:p-0 flex w-full lg:w-fit items-center justify-between lg:justify-start">
         <Link href="/">Greenstixz</Link>
         <div className="lg:hidden flex items-center space-x-[10px]">
@@ -64,14 +64,14 @@ const links = [
   },
   {
     title: "About",
-    to: "/",
+    to: "/about",
   },
   {
     title: "Contact",
-    to: "/",
+    to: "/contact",
   },
   {
     title: "Blog",
-    to: "/",
+    to: "/blog",
   },
 ];

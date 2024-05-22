@@ -7,7 +7,6 @@ import { FiSun, FiMoon } from "react-icons/fi";
 function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme } = useTheme();
-  console.log(resolvedTheme);
 
   const [theme, setUserTheme] = useState(resolvedTheme);
 

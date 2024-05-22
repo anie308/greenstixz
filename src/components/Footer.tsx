@@ -1,5 +1,9 @@
 import React from "react";
 import { FaTelegramPlane } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -36,12 +40,20 @@ function Footer() {
               Socials So You Stay Connected To Us!
             </p>
 
-            <div className="grid grid-cols-4 mt-[20px]">
-              <div>loll</div>
-              <div>loll</div>
-              <div>loll</div>
-              <div>loll</div>
+            <div className="flex items-center space-x-[30px] mt-[20px]">
+            <div>
+              <FaFacebook className="text-[30px] text-primary cursor-pointer" />
             </div>
+            <div>
+              <FaLinkedin className="text-[30px] text-primary cursor-pointer" />
+            </div>
+            <div>
+              <FaInstagram className="text-[30px] text-primary cursor-pointer" />
+            </div>
+            <div>
+              <FaXTwitter className="text-[30px] text-primary cursor-pointer" />
+            </div>
+          </div>
           </div>
         </div>
       </div>

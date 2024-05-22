@@ -10,7 +10,7 @@ function Blog() {
           <div>
             <div className="w-fit flex items-center dark:bg-[#242627] bg-green-50 p-[5px_10px] space-x-[5px] rounded-[5px]">
               <TiStarburst className="text-primary" />
-              <p>Latest Posts</p>
+              <p className="font-inter text-[12px] lg:text-[14px] uppercase">Latest Posts</p>
               <TiStarburst className="text-primary" />
             </div>
             <p className="font-[700] text-[40px] font-inter mt-[15px]">

@@ -15,7 +15,7 @@ function Hero() {
       <div className="flex flex-col items-center space-y-[10px]">
         <div className="w-fit flex items-center dark:bg-[#242627] bg-green-50 p-[8px_15px] space-x-[5px] rounded-full">
           <MdOutlineStar className="text-primary" />
-          <p className="font-inter text-[12px] lg:text-[14px]">EXPERTISE YOU CAN TRUST</p>
+          <p className="font-inter text-[12px] lg:text-[14px] uppercase">EXPERTISE YOU CAN TRUST</p>
           <MdOutlineStar className="text-primary" />
         </div>
         <div className="flex flex-col items-center space-y-[15px]">
@@ -30,7 +30,7 @@ function Hero() {
           </p>
         </div>
       </div>
-      <div className="w-[100%] lg:w-[70%] h-[300px] lg:h-[500px] border mt-[50px]"></div>
+      <div className="w-[100%] lg:w-[70%] h-[300px] lg:h-[500px] border border-primary mt-[50px]"></div>
     </div>
   );
 }
