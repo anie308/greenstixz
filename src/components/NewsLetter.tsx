@@ -2,9 +2,9 @@ import React from "react";
 
 function NewsLetter() {
   return (
-    <div className="flex flex-col space-y-[20px] my-[50px]">
-      <p className="text-center leading-[40px] lg:leading-[70px] dark:text-white text-[#0B0C0C] font-inter text-[20px] lg:text-[45px] font-[800]">
-        Newsletter
+    <div className="flex flex-col items-center justify-center space-y-[20px] p-[50px_20px] lg:p-[80px_80px]">
+      <p className="text-center font-[700] text-[40px] font-inter">
+        Subscribe to Our Newsletter
       </p>
     </div>
   );
