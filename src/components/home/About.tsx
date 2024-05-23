@@ -60,6 +60,9 @@ function About() {
             <p className="font-inter text-[18px] mt-[20px] font-[600]">Success Rate</p>
           </div>
         </div>
+        <div className="mt-[50px]">
+          <button className="bg-primary rounded-[5px] text-white font-inter p-[10px_20px]">Requst Proposal</button>
+        </div>
       </div>
     </div>
   );
