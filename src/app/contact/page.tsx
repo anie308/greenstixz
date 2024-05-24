@@ -50,18 +50,30 @@ function Contact() {
           </p>
 
           <div className="flex items-center space-x-[30px] mt-[20px]">
-            <div>
+            <a
+              href="https://www.facebook.com/greenstixznetworks?mibextid=ZbWKwL"
+              target="_blank"
+            >
               <FaFacebook className="text-[30px] text-primary cursor-pointer" />
-            </div>
-            <div>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/greenstixz-networks/"
+              target="_blank"
+            >
               <FaLinkedin className="text-[30px] text-primary cursor-pointer" />
-            </div>
-            <div>
+            </a>
+            <a
+              href="https://www.instagram.com/greenstixznetworks?igsh=MTdwOWM0eWh2cHQ1bw=="
+              target="_blank"
+            >
               <FaInstagram className="text-[30px] text-primary cursor-pointer" />
-            </div>
-            <div>
+            </a>
+            <a
+              href="https://x.com/greenstixz?t=gR0uEl9FjOZbBgVSMdJGDA&s=09"
+              target="_blank"
+            >
               <FaXTwitter className="text-[30px] text-primary cursor-pointer" />
-            </div>
+            </a>
           </div>
         </div>
       </div>

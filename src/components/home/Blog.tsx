@@ -1,13 +1,56 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { TiStarburst } from "react-icons/ti";
 import { GoArrowUpRight } from "react-icons/go";
 import BlogCard from "../BlogCard";
+import { getBlogPosts } from "@/service";
+
 function Blog() {
+  const [blogs, setBlogs] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState(null);
+
+  const hasBlog = blogs?.length > 0;
+
+  useEffect(() => {
+    const getPosts = async () => {
+      try {
+        const posts = await getBlogPosts();
+        setBlogs(posts);
+        console.log(posts);
+        setLoading(false);
+      } catch (error: any) {
+        console.log(error);
+        setError(error);
+        setLoading(false);
+      }
+    };
+
+    getPosts();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="p-[50px_20px] lg:p-[80px_80px] flex items-center justify-center">
+        <div className="text-center">Loading...</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="p-[50px_20px] lg:p-[80px_80px] flex items-center justify-center">
+        <div className="text-center text-red-500">Failed to load posts</div>
+      </div>
+    );
+  }
+
   return (
-    <div className="p-[50px_20px] lg:p-[80px_80px] flex items-center justify-center">
-      <div className="grid gap-[40px] lg:grid-cols-3  2xl:container">
-        <div className=" p-[20px_10px] h-[430px] flex flex-col items-start justify-between">
+    <div className="p-[50px_20px] lg:p-[80px_100px] flex items-center justify-center">
+      <div className=" grid gap-[40px] lg:grid-cols-3 2xl:container ">
+        <div className="p-[20px_10px] h-[430px] flex flex-col items-start justify-between">
           <div>
             <div className="w-fit flex items-center dark:bg-[#242627] bg-green-50 p-[5px_10px] space-x-[5px] rounded-[5px]">
               <TiStarburst className="text-primary" />
@@ -30,9 +73,11 @@ function Blog() {
             <GoArrowUpRight />
           </Link>
         </div>
-        {Array.from({ length: 2 }).map((_, index) => (
-          <BlogCard key={index} index={index} />
-        ))}
+        {hasBlog ? (
+          blogs.map((blog, index) => <BlogCard key={index} blog={blog} />)
+        ) : (
+          <div className="text-center">No posts yet</div>
+        )}
       </div>
     </div>
   );

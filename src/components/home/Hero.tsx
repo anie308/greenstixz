@@ -30,11 +30,13 @@ function Hero() {
           </p>
         </div>
       </div>
-      <div className="w-[100%] lg:w-[70%] h-[300px] lg:h-[500px] border border-primary mt-[50px]"></div>
+      <div className="w-[100%] lg:w-[70%] h-[300px] lg:h-[500px] shadow  mt-[50px] rounded-[20px]">
+      <iframe className="w-full h-full rounded-[20px]" src="https://www.youtube.com/embed/uQy_jBBPyf0?si=rTGY-gL2ARIME5WZ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      </div>
     </div>
   );
 }
-
+//width="560" height="315"
 //Build Grow
 
 export default Hero;
