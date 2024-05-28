@@ -6,6 +6,7 @@ import { TiStarburst } from "react-icons/ti";
 import { GoArrowUpRight } from "react-icons/go";
 import BlogCard from "../BlogCard";
 import { getBlogPosts } from "@/service";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 function Blog() {
   const [blogs, setBlogs] = React.useState([]);
@@ -13,6 +14,7 @@ function Blog() {
   const [error, setError] = React.useState(null);
 
   const hasBlog = blogs?.length > 0;
+
 
   useEffect(() => {
     const getPosts = async () => {
@@ -73,11 +75,13 @@ function Blog() {
             <GoArrowUpRight />
           </Link>
         </div>
+        <Zoom direction="up" triggerOnce={true}>
         {hasBlog ? (
           blogs.map((blog, index) => <BlogCard key={index} blog={blog} />)
         ) : (
           <div className="text-center">No posts yet</div>
         )}
+        </Zoom>
       </div>
     </div>
   );

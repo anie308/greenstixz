@@ -1,6 +1,9 @@
+'use client'
+
 import React from "react";
 import { TiStarburst } from "react-icons/ti";
 import { IoMdDisc } from "react-icons/io";
+import { Slide } from "react-awesome-reveal";
 
 function WhyChose() {
   return (
@@ -12,7 +15,8 @@ function WhyChose() {
         </p>
         <TiStarburst className="text-primary" />
       </div>
-      <div className="w-full lg:w-[75%] grid lg:grid-cols-2 mt-[50px] gap-[40px]">
+     <Slide className="w-full items-center justify-center flex" direction="up" triggerOnce={true}>
+     <div className="w-full lg:w-[75%] grid lg:grid-cols-2 mt-[50px] gap-[40px]">
         <div className="border h-[300px] p-[20px] lg:h-[400px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nemo aut
           velit vero sit debitis in sunt facilis, eveniet et dolorem illo
@@ -45,6 +49,7 @@ function WhyChose() {
           </div>
         </div>
       </div>
+     </Slide>
     </div>
   );
 }

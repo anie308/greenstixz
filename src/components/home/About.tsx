@@ -4,6 +4,7 @@ import React from "react";
 import { TiStarburst } from "react-icons/ti";
 import starburst from "@/assets/svg/starburst.svg";
 import CountUp from "react-countup";
+import { Slide } from "react-awesome-reveal";
 
 function About() {
   return (
@@ -15,8 +16,9 @@ function About() {
           <TiStarburst className="text-primary" />
         </div>
         <p className="font-inter text-[20px] text-center mt-[20px]">GreenStixz is not just a service provider – we are architects of digital transformation, <br className="hidden lg:block" /> dedicated to reshaping your brand’s online destiny. We’re your strategic partner in the digital space. <br className="hidden lg:block"/> We craft tailored solutions that elevate your brand, drive online growth, and harness the power of effective web development.</p>
-        
+        <Slide direction="up" triggerOnce={true} className="flex items-center justify-center">
         <div className="grid lg:grid-cols-3 gap-[40px] lg:gap-[80px] mt-[50px]">
+          
           <div className="flex flex-col items-center justify-center">
             <div className="relative h-[150px] w-[150px] ">
               <Image className="w-[150px] h-[150px]" src={starburst} alt="" />
@@ -31,6 +33,8 @@ function About() {
             </div>
             <p className="font-inter text-[18px] mt-[20px] font-[600]">Successful Projects</p>
           </div>
+          
+          
           <div className="flex flex-col items-center justify-center">
             <div className="relative h-[150px] w-[150px] ">
               <Image className="w-[150px] h-[150px]" src={starburst} alt="" />
@@ -45,6 +49,7 @@ function About() {
             </div>
             <p className="font-inter text-[18px] mt-[20px] font-[600]">Businesses</p>
           </div>
+         
           <div className="flex flex-col items-center justify-center">
             <div className="relative h-[150px] w-[150px]">
               <Image className="w-[150px] h-[150px]" src={starburst} alt="" />
@@ -60,6 +65,7 @@ function About() {
             <p className="font-inter text-[18px] mt-[20px] font-[600]">Success Rate</p>
           </div>
         </div>
+        </Slide>
         <div className="mt-[50px]">
           <button className="bg-primary rounded-[5px] text-white font-inter p-[10px_20px]">Requst Proposal</button>
         </div>

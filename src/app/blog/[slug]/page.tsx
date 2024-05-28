@@ -1,10 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { getEntryBySlug } from "@/service";
 import React, { useEffect } from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import NewsLetter from "@/components/NewsLetter";
-import Image from "next/image";
 
 function SinglePost({ params }: { params: { slug: string } }) {
   const [post, setPost] = React.useState<any>({});
@@ -29,7 +29,11 @@ function SinglePost({ params }: { params: { slug: string } }) {
             {post?.fields?.title}
           </h1>
           <div className="h-[300px] lg:h-[400px] w-full border-2 mt-[20px] overflow-hidden">
-            <img src={`https:${post?.fields?.featuredImage?.fields?.file?.url}`} className="h-full w-full object-cover" alt=""  />
+            <img
+              src={`https:${post?.fields?.featuredImage?.fields?.file?.url}`}
+              className="h-full w-full object-cover"
+              alt=""
+            />
           </div>
 
           <div className="mt-[40px] font-inter text-[16px] lg:text-[18px] leading-relaxed">
@@ -37,7 +41,7 @@ function SinglePost({ params }: { params: { slug: string } }) {
           </div>
         </div>
       ) : null}
-      <NewsLetter/>
+      <NewsLetter />
     </div>
   );
 }

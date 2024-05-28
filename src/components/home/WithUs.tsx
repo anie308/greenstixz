@@ -1,6 +1,9 @@
+'use client'
+
 import React from "react";
 import { TiStarburst } from "react-icons/ti";
 import { IoMdDisc } from "react-icons/io";
+import { Slide } from "react-awesome-reveal";
 
 function WithUs() {
   return (
@@ -36,6 +39,7 @@ function WithUs() {
           </p>
         </div>
 
+        <Slide className="w-full items-center justify-center flex" direction="up" triggerOnce={true}>
         <div className="w-full lg:w-[65%] grid lg:grid-cols-3 mt-[50px] gap-[40px]">
           <div className=" border rounded-[10px] p-[15px] shadow">
             <p className="font-[600] font-inter text-[25px]">Our Services</p>
@@ -115,6 +119,7 @@ function WithUs() {
             </div>
           </div>
         </div>
+        </Slide>
       </div>
     </div>
   );
