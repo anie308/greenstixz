@@ -101,6 +101,9 @@ function Contact() {
             placeholder="Message..."
           />
         </div>
+        <div className="w-full flex items-center justify-end">
+          <button className="bg-primary h-[40px] px-[40px] rounded-[5px] text-white">Submit</button>
+        </div>
       </div>
     </div>
   );

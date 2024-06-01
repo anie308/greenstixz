@@ -36,7 +36,7 @@ function Blog() {
   if (loading) {
     return (
       <div className="p-[50px_20px] lg:p-[80px_80px] flex items-center justify-center">
-        <div className="text-center">Loading...</div>
+        <div className="text-center font-inter">Loading...</div>
       </div>
     );
   }
