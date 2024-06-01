@@ -4,6 +4,8 @@ import React from "react";
 import { TiStarburst } from "react-icons/ti";
 import { IoMdDisc } from "react-icons/io";
 import { Slide } from "react-awesome-reveal";
+import about from '@/assets/img/about-g.jpg'
+import Image from "next/image";
 
 function WhyChose() {
   return (
@@ -17,10 +19,8 @@ function WhyChose() {
       </div>
      <Slide className="w-full items-center justify-center flex" direction="up" triggerOnce={true}>
      <div className="w-full lg:w-[75%] grid lg:grid-cols-2 mt-[50px] gap-[40px]">
-        <div className="border h-[300px] p-[20px] lg:h-[400px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nemo aut
-          velit vero sit debitis in sunt facilis, eveniet et dolorem illo
-          doloribus ipsam repellendus quaerat ea perspiciatis reiciendis quam.
+        <div className="border h-[300px] rounded-[10px] lg:h-[400px]">
+         <Image src={about} alt="about" className="h-full w-full rounded-[10px]" />
         </div>
         <div className="flex-col flex space-y-[20px]">
           <div className="flex items-center space-x-[5px]">

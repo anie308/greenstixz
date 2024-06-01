@@ -12,7 +12,6 @@ function SinglePost({ params }: { params: { slug: string } }) {
     const getSinglePost = async () => {
       try {
         const post = await getEntryBySlug(params.slug, "blogPost");
-        // console.log(post);
         setPost(post);
       } catch (error) {
         console.log(error);
@@ -28,10 +27,10 @@ function SinglePost({ params }: { params: { slug: string } }) {
           <h1 className="text-[30px] font-inter font-[700]">
             {post?.fields?.title}
           </h1>
-          <div className="h-[300px] lg:h-[400px] w-full border-2 mt-[20px] overflow-hidden">
+          <div className="h-[300px] lg:h-[400px] w-full  mt-[20px] overflow-hidden">
             <img
               src={`https:${post?.fields?.featuredImage?.fields?.file?.url}`}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover rounded-[10px]"
               alt=""
             />
           </div>

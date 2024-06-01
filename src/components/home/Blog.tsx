@@ -50,7 +50,7 @@ function Blog() {
   }
 
   return (
-    <div className="p-[50px_20px] lg:p-[80px_100px] flex items-center justify-center">
+    <div className="p-[50px_20px] lg:p-[80px_150px] flex items-center justify-center">
       <div className=" grid gap-[40px] lg:grid-cols-3 2xl:container ">
         <div className="p-[20px_10px] h-[430px] flex flex-col items-start justify-between">
           <div>
