@@ -28,13 +28,13 @@ function Blog() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center p-[30px_20px] lg:p-[20px_80px]">
+    <div className="flex flex-col items-center p-[30px_20px] xl:p-[20px_80px]">
       <div className="mb-[40px] mt-[20px]">
         <p className="text-center leading-[40px] lg:leading-[70px] dark:text-white text-[#0B0C0C] font-inter text-[40px] lg:text-[65px] font-[800]">
           Our Articles
         </p>
       </div>
-      <div className="grid gap-[20px] lg:grid-cols-3 w-full lg:w-[80%] my-[20px]">
+      <div className="grid gap-[20px] lg:grid-cols-3 w-full xl:w-[80%] my-[20px]">
         {hasBlog ? (
           blogs.map((blog, index) => <BlogCard key={index} blog={blog} />)
         ) : (

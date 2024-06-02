@@ -1,5 +1,7 @@
 import React from "react";
 import { TiStarburst } from "react-icons/ti";
+import vision from '@/assets/img/vision.jpg'
+import Image from "next/image";
 
 function Vision() {
   return (
@@ -28,10 +30,8 @@ function Vision() {
             </p>
           </div>
         </div>
-        <div className="border h-[300px] p-[20px] lg:h-[400px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nemo aut
-          velit vero sit debitis in sunt facilis, eveniet et dolorem illo
-          doloribus ipsam repellendus quaerat ea perspiciatis reiciendis quam.
+        <div className="border h-[300px] rounded-[10px] lg:h-[400px]">
+        <Image src={vision} className="rounded-[10px] w-full h-full object-cover" alt=""/>
         </div>
       </div>
     </div>

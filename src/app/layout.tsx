@@ -3,6 +3,25 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
+import localFont from 'next/font/local'
+
+const tripSans = localFont({
+  src: [
+    {
+      path: '../../public/fonts/TripSans-Regular.ttf',
+      weight: "400"
+    },
+    {
+      path: '../../public/fonts/TripSans-Medium.ttf',
+      weight: "500"
+    },
+    {
+      path: '../../public/fonts/TripSans-Bold.ttf',
+      weight: "600"
+    },
+  ],
+  variable: '--font-trip-sans'
+});
 
 export const metadata: Metadata = {
   title: "GreenStixz Networks",
@@ -15,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${tripSans.variable}`}>
       <body className="dark:bg-black">
         <Providers>
           <Navbar />

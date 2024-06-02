@@ -5,6 +5,7 @@ import Hero from "@/components/home/Hero";
 import WhyChose from "@/components/home/WhyChose";
 import WithUs from "@/components/home/WithUs";
 
+
 export default function Home() {
   return (
    <div>
