@@ -7,14 +7,13 @@ function NewsLetter() {
         Subscribe to Our Newsletter
       </p>
 
-     <div className="h-[350px] w-full lg:w-[60%] border">
-     <iframe
-        src="https://markettalksandinsights.substack.com/embed"
-        width="480"
-        height="320"
-        style={{ border: "1px", borderColor: "#EEE", background: "white" }}
-      ></iframe>
-     </div>
+      <div className="h-[350px] w-full lg:w-[60%] border">
+        <iframe
+          src="https://markettalksandinsights.substack.com/embed"
+          className="w-full h-full text-black dark:text-white font-inter bg-white dark:bg-black"
+          // style={{ border: "1px", borderColor: "#EEE", background: "white" }}
+        ></iframe>
+      </div>
     </div>
   );
 }
