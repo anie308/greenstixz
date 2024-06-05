@@ -18,7 +18,7 @@ function Mission() {
         </div>
         <div className="flex-col flex space-y-[20px]">
           <div className="flex items-center space-x-[5px]">
-            <p className="font-inter font-[500] text-[20px]">
+            <p className="font-inter font-[400] text-[20px]">
               At GreenStixz Networks, our mission is to revolutionize the
               digital landscape by providing comprehensive and customized
               solutions that empower businesses to thrive in an ever-evolving
@@ -26,7 +26,7 @@ function Mission() {
             </p>
           </div>
           <div className="flex items-center space-x-[5px]">
-            <p className="font-inter font-[500] text-[20px]">
+            <p className="font-inter font-[400] text-[20px]">
               We are committed to delivering exceptional results, fostering
               innovation, and building long-lasting partnerships with our
               clients.

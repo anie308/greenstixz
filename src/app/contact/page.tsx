@@ -30,7 +30,10 @@ function Contact() {
             <div>
               <p className="font-inter">To More Inquiry</p>
               <p className="font-inter font-[600] text-[18px]">
-                +990-737 621 432
+                +2348023670860
+              </p>
+              <p className="font-inter font-[600] text-[18px]">
+                +2349039261156
               </p>
             </div>
           </div>
@@ -39,7 +42,7 @@ function Contact() {
             <div>
               <p className="font-inter">To Send Mail</p>
               <p className="font-inter font-[600] text-[18px]">
-                info@gmail.com
+              hello@greenstixznetworks.com
               </p>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
@@ -20,6 +21,18 @@ function Footer() {
         </div>
         <div>
           <p className="text-[25px] font-inter font-[700]">Company</p>
+          <div className="flex flex-col space-y-[10px] mt-[10px]">
+          {links.map((item, index) => (
+            <Link
+              key={index}
+              className="font-inter text-[16px] dark:text-white text-black hover:text-primary transition-colors font-[500]"
+              href={item.to}
+            >
+              {item.title}
+            </Link>
+          ))}
+         
+        </div>
         </div>
         <div>
           <p className="font-inter font-[700] text-[25px]">
@@ -65,3 +78,23 @@ function Footer() {
 }
 
 export default Footer;
+
+const links = [
+  {
+    title: "Home",
+    to: "/",
+  },
+  {
+    title: "About",
+    to: "/about",
+  },
+  {
+    title: "Contact",
+    to: "/contact",
+  },
+  {
+    title: "Blog",
+    to: "/blog",
+  },
+];
+
