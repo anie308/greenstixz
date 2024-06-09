@@ -5,16 +5,14 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
-
+import logo from '@/assets/img/grelogo.jpg'
+import Image from "next/image";
 function Footer() {
   return (
     <div className="bg-green-50 dark:bg-[#242627] p-[50px_20px] lg:p-[80px_80px] ">
       <div className="grid gap-[40px] lg:grid-cols-4">
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          iure excepturi, at rerum neque omnis adipisci facilis, necessitatibus
-          enim quibusdam, ipsum cumque est. Hic sapiente eos, eligendi
-          consectetur ducimus officia?
+          <Image src={logo} alt="GreenStixz Networks" />
         </div>
         <div>
           <p className="text-[25px] font-inter font-[700]">Our Solutions</p>
@@ -55,16 +53,16 @@ function Footer() {
 
             <div className="flex items-center space-x-[30px] mt-[20px]">
             <a href="https://www.facebook.com/greenstixznetworks?mibextid=ZbWKwL" target="_blank">
-              <FaFacebook className="text-[30px] text-primary cursor-pointer" />
+              <FaFacebook className="text-[25px] text-primary cursor-pointer" />
             </a>
             <a href="https://www.linkedin.com/company/greenstixz-networks/" target="_blank">
-              <FaLinkedin className="text-[30px] text-primary cursor-pointer" />
+              <FaLinkedin className="text-[25px] text-primary cursor-pointer" />
             </a>
             <a href="https://www.instagram.com/greenstixznetworks?igsh=MTdwOWM0eWh2cHQ1bw==" target="_blank">
-              <FaInstagram className="text-[30px] text-primary cursor-pointer" />
+              <FaInstagram className="text-[25px] text-primary cursor-pointer" />
             </a>
             <a href="https://x.com/greenstixz?t=gR0uEl9FjOZbBgVSMdJGDA&s=09" target="_blank">
-              <FaXTwitter className="text-[30px] text-primary cursor-pointer" />
+              <FaXTwitter className="text-[25px] text-primary cursor-pointer" />
             </a>
           </div>
           </div>

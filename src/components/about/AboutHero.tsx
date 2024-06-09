@@ -3,8 +3,8 @@ import React from "react";
 function AboutHero() {
   return (
     <div className="flex flex-col items-start p-[50px_20px] lg:p-[100px_80px]">
-      <p className="text-start leading-[40px] lg:leading-[60px] dark:text-white text-[#0B0C0C] font-inter text-[40px] lg:text-[50px] font-[800]">
-        Welcome to GreenStixz Networks, where innovation meets excellence in
+      <p className="text-start leading-[40px] lg:leading-[60px] dark:text-white text-[#0B0C0C] font-inter text-[30px] lg:text-[50px] font-[800]">
+        Welcome to <span className="text-primary">GreenStixz Networks</span>, where innovation meets excellence in
         digital solutions.
       </p>
       <p className="font-inter text-[22px] leading-[30px] mt-[10px]">

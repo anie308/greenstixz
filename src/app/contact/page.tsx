@@ -4,6 +4,9 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
+import { IoMailOutline } from "react-icons/io5";
+import { IoCallOutline } from "react-icons/io5";
+
 
 function Contact() {
   return (
@@ -26,29 +29,32 @@ function Contact() {
         </div>
         <div className="mt-[20px] flex flex-col space-y-[20px]">
           <div className="flex items-center space-x-[10px]">
-            <div className="h-[50px] w-[50px] bg-primary"></div>
+            <IoCallOutline className="text-[40px] text-primary" />
             <div>
               <p className="font-inter">To More Inquiry</p>
-              <p className="font-inter font-[600] text-[18px]">
+              <p className="font-inter font-[500] text-[18px]">
                 +2348023670860
               </p>
-              <p className="font-inter font-[600] text-[18px]">
+              <p className="font-inter font-[500] text-[18px]">
                 +2349039261156
               </p>
             </div>
           </div>
           <div className="flex items-center space-x-[10px]">
-            <div className="h-[50px] w-[50px] bg-primary"></div>
+            <IoMailOutline className="text-[40px] text-primary" />
             <div>
               <p className="font-inter">To Send Mail</p>
-              <p className="font-inter font-[600] text-[18px]">
+              <p className="font-inter leading-[18px] font-[500] text-[18px]">
               hello@greenstixznetworks.com
+              </p>
+              <p className="font-inter leading-[18px] font-[500] text-[18px]">
+              greenstixznetworks@gmail.com
               </p>
             </div>
           </div>
         </div>
         <div className="mt-[20px] w-full lg:w-[60%]">
-          <p className="font-inter text-[16px] font-[600] underline">
+          <p className="font-inter text-[16px] font-[500] underline">
             Socials So You Stay Connected To Us!
           </p>
 
@@ -57,25 +63,25 @@ function Contact() {
               href="https://www.facebook.com/greenstixznetworks?mibextid=ZbWKwL"
               target="_blank"
             >
-              <FaFacebook className="text-[30px] text-primary cursor-pointer" />
+              <FaFacebook className="text-[25px] text-primary cursor-pointer" />
             </a>
             <a
               href="https://www.linkedin.com/company/greenstixz-networks/"
               target="_blank"
             >
-              <FaLinkedin className="text-[30px] text-primary cursor-pointer" />
+              <FaLinkedin className="text-[25px] text-primary cursor-pointer" />
             </a>
             <a
               href="https://www.instagram.com/greenstixznetworks?igsh=MTdwOWM0eWh2cHQ1bw=="
               target="_blank"
             >
-              <FaInstagram className="text-[30px] text-primary cursor-pointer" />
+              <FaInstagram className="text-[25px] text-primary cursor-pointer" />
             </a>
             <a
               href="https://x.com/greenstixz?t=gR0uEl9FjOZbBgVSMdJGDA&s=09"
               target="_blank"
             >
-              <FaXTwitter className="text-[30px] text-primary cursor-pointer" />
+              <FaXTwitter className="text-[25px] text-primary cursor-pointer" />
             </a>
           </div>
         </div>
