@@ -21,10 +21,10 @@ function SinglePost({ params }: { params: { slug: string } }) {
   }, [params.slug]);
 
   return (
-    <div className="p-[50px_20px] lg:p-[80px_80px] flex flex-col items-center justify-center">
+    <div className="p-[50px_20px] w-full border lg:p-[80px_50px]  flex flex-col items-center justify-center">
       {post ? (
-        <div className="w-full lg:w-[70%]">
-          <h1 className="text-[30px] font-inter font-[700]">
+        <div className="w-full lg:w-[90%] prose border">
+          <h1 className="text-[30px] font-inter font-[700] ">
             {post?.fields?.title}
           </h1>
           <div className="h-[300px] lg:h-[400px] w-full  mt-[20px] overflow-hidden">
