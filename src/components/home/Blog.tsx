@@ -21,7 +21,7 @@ function Blog() {
       try {
         const posts = await getBlogPosts();
         setBlogs(posts);
-        console.log(posts);
+        // console.log(posts);
         setLoading(false);
       } catch (error: any) {
         console.log(error);

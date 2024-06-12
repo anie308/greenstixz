@@ -32,7 +32,7 @@ function Hero() {
         </div>
       </div>
       <Slide direction="up" triggerOnce={true} className="w-[100%] flex items-center justify-center">
-      <div className="w-[100%] lg:w-[70%] h-[300px] lg:h-[500px] shadow  mt-[50px] rounded-[20px]">
+      <div className="w-[100%] lg:w-[70%] h-[300px] lg:h-[500px] shadow  mt-[50px] rounded-[20px] border">
       <iframe className="w-full h-full rounded-[20px]" src="https://www.youtube.com/embed/uQy_jBBPyf0?si=rTGY-gL2ARIME5WZ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
       </Slide>
