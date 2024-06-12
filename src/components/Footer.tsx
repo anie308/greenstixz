@@ -14,15 +14,34 @@ function Footer() {
   return (
     <div className="bg-green-50 dark:bg-[#242627] p-[50px_20px] lg:p-[80px_80px] ">
       <div className="grid gap-[40px] lg:grid-cols-4">
-        <Link href="/" className="">
-          <Image
-            src={logo}
-            alt="GreenStixz Networks"
-            className="h-[60px] w-[180px]"
-          />
-        </Link>
+        <div>
+          <Link href="/" className="">
+            <Image
+              src={logo}
+              alt="GreenStixz Networks"
+              className="h-[60px] w-[180px]"
+            />
+          </Link>
+          <div className="mt-[10px] font-inter font-[400]">
+            We Help Emerging Business Build, Grow & Scale their Brand through
+            Expert Marketing, Branding, Web And Software Development Solutions.
+          </div>
+        </div>
+
         <div>
           <p className="text-[25px] font-inter font-[700]">Our Solutions</p>
+          <div className="flex flex-col items-start justify-center mt-[10px] space-y-[10px]">
+            <p className="font-inter text-[16px] font-[500]">
+              Digital Marketing (Full-fledged)
+            </p>
+            <p className="font-inter text-[16px] font-[500]">
+              Personal/Corporate Branding
+            </p>
+            <p className="font-inter text-[16px] font-[500]">Web Development</p>
+            <p className="font-inter text-[16px] font-[500]">
+              Software Development
+            </p>
+          </div>
         </div>
         <div>
           <p className="text-[25px] font-inter font-[700]">Company</p>

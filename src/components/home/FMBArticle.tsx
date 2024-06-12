@@ -14,7 +14,7 @@ function FMBArticle() {
       <div className="w-fit flex items-center dark:bg-[#242627] bg-green-50 p-[5px_10px] space-x-[5px] rounded-[5px]">
         <TiStarburst className="text-primary" />
         <p className="font-inter text-[12px] lg:text-[14px] uppercase">
-          FMB ARTICLE HIGHLIGHT
+          FMBBC ARTICLE HIGHLIGHT
         </p>
         <TiStarburst className="text-primary" />
       </div>
@@ -25,7 +25,7 @@ function FMBArticle() {
            <p className="font-inter font-[400] text-[16px] my-[20px]">At the Bootcamp, GreenStixz in collaboration with Learn Africa, Abasifreke Thompson, Kingsley Ime, Aniefon, and Daniel helped fixed common business problems for the business owners who attended the event.</p>
            <Link href="/blog/fix-my-business-bootcamp">
            <button  className="bg-primary rounded-[5px] text-white font-inter p-[10px_20px]">
-            Read Full Articles
+            Read Full Article
           </button>
            </Link>
           </div>

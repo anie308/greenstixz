@@ -1,3 +1,4 @@
+import NewsLetter from '@/components/NewsLetter'
 import AboutHero from '@/components/about/AboutHero'
 import Apart from '@/components/about/Apart'
 import LetsConnect from '@/components/about/LetsConnect'
@@ -13,6 +14,7 @@ function About() {
       <Vision/>
       <Apart/>
       <LetsConnect/>
+      <NewsLetter/>
     </div>
   )
 }
