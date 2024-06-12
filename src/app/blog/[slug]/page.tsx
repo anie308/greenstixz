@@ -8,6 +8,7 @@ import NewsLetter from "@/components/NewsLetter";
 
 function SinglePost({ params }: { params: { slug: string } }) {
   const [post, setPost] = React.useState<any>({});
+
   useEffect(() => {
     const getSinglePost = async () => {
       try {
@@ -19,11 +20,12 @@ function SinglePost({ params }: { params: { slug: string } }) {
     };
     getSinglePost();
   }, [params.slug]);
+  
 
   return (
-    <div className="p-[50px_20px] w-full border lg:p-[80px_50px]  flex flex-col items-center justify-center">
+    <div className="p-[50px_20px] w-full  lg:p-[80px_50px]  flex flex-col items-center justify-center">
       {post ? (
-        <div className="w-full lg:w-[90%] prose border">
+        <div className="w-full lg:w-[60%]">
           <h1 className="text-[30px] font-inter font-[700] ">
             {post?.fields?.title}
           </h1>
@@ -35,7 +37,7 @@ function SinglePost({ params }: { params: { slug: string } }) {
             />
           </div>
 
-          <div className="mt-[40px] font-inter text-[16px] lg:text-[18px] leading-relaxed">
+          <div className="mt-[40px] prose font-inter text-[16px] lg:text-[18px] leading-relaxed dark:text-white prose-a:text-primary">
             {documentToReactComponents(post?.fields?.content)}
           </div>
         </div>

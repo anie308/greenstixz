@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Link from "next/link";
@@ -5,12 +6,18 @@ import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { FiPlus } from "react-icons/fi";
+import Image from "next/image";
+import logo from '@/assets/svg/greenlogo.svg'
+
+
 function Navbar() {
   const [show, setShow] = useState(false);
   return (
     <div className=" shadow sticky top-0 z-30 dark:bg-[#242627] bg-white lg:p-[15px_80px] flex items-center justify-between">
-      <div className="p-[15px_20px] lg:p-0 flex w-full lg:w-fit items-center justify-between lg:justify-start">
-        <Link href="/">Greenstixz</Link>
+      <div className="p-[10px_20px] lg:p-0 flex w-full lg:w-fit items-center justify-between lg:justify-start">
+        <Link href="/">
+        <Image src={logo} alt="GreenStixz Networks" className="h-[60px] w-[160px]" />
+        </Link>
         <div className="lg:hidden flex items-center space-x-[10px]">
           <ThemeSwitcher />
           <div onClick={() => setShow(!show)}>

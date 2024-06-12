@@ -7,7 +7,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 
-
 function Contact() {
   return (
     <div className="p-[50px_20px] gap-[40px] lg:p-[80px_80px] grid lg:grid-cols-2">
@@ -22,34 +21,49 @@ function Contact() {
             Connect with GreenStixz
           </p>
           <p className="font-inter ">
-            Ready to take the first step towards unlocking opportunities,
-            realizing goals, and embracing innovation? We&apos;re here and eager
-            to connect.
+            At GreenStixz Networks, we&rsquo;re not just a service provider – we&rsquo;re
+            your trusted partner in digital transformation.
+          </p>
+          <p className="font-inter ">
+            Join us and experience the power of innovation, collaboration, and
+            excellence in digital solutions.
           </p>
         </div>
         <div className="mt-[20px] flex flex-col space-y-[20px]">
           <div className="flex items-center space-x-[10px]">
             <IoCallOutline className="text-[40px] text-primary" />
-            <div>
+            <div className="flex flex-col">
               <p className="font-inter">To More Inquiry</p>
-              <p className="font-inter font-[500] text-[18px]">
+              <a
+                href="tel:08023670860"
+                className="font-inter font-[500] text-[18px]"
+              >
                 +2348023670860
-              </p>
-              <p className="font-inter font-[500] text-[18px]">
+              </a>
+              <a
+                href="tel:09039261156"
+                className="font-inter font-[500] text-[18px]"
+              >
                 +2349039261156
-              </p>
+              </a>
             </div>
           </div>
           <div className="flex items-center space-x-[10px]">
             <IoMailOutline className="text-[40px] text-primary" />
-            <div>
+            <div className="flex flex-col ">
               <p className="font-inter">To Send Mail</p>
-              <p className="font-inter leading-[18px] font-[500] text-[18px]">
-              hello@greenstixznetworks.com
-              </p>
-              <p className="font-inter leading-[18px] font-[500] text-[18px]">
-              greenstixznetworks@gmail.com
-              </p>
+              <a
+                href="mailto:hello@greenstixznetworks.com"
+                className="font-inter leading-[18px] font-[500] text-[18px]"
+              >
+                hello@greenstixznetworks.com
+              </a>
+              <a
+                href="mailto:greenstixznetworks@gmail.com"
+                className="font-inter leading-[18px] font-[500] text-[18px]"
+              >
+                greenstixznetworks@gmail.com
+              </a>
             </div>
           </div>
         </div>
@@ -111,7 +125,9 @@ function Contact() {
           />
         </div>
         <div className="w-full flex items-center justify-end">
-          <button className="bg-primary h-[40px] px-[40px] rounded-[5px] text-white">Submit</button>
+          <button className="bg-primary h-[40px] px-[40px] rounded-[5px] text-white">
+            Submit
+          </button>
         </div>
       </div>
     </div>

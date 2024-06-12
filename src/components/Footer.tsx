@@ -1,18 +1,16 @@
 import Link from "next/link";
 import React from "react";
 import { FaTelegramPlane } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import logo from '@/assets/img/grelogo.jpg'
+import { FaFacebook, FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
+
+// import logo from '@/assets/img/greenlogo.png'
 import Image from "next/image";
 function Footer() {
   return (
     <div className="bg-green-50 dark:bg-[#242627] p-[50px_20px] lg:p-[80px_80px] ">
       <div className="grid gap-[40px] lg:grid-cols-4">
-        <div>
-          <Image src={logo} alt="GreenStixz Networks" />
+        <div className="">
+          {/* <Image src={logo} alt="GreenStixz Networks" className="" /> */}
         </div>
         <div>
           <p className="text-[25px] font-inter font-[700]">Our Solutions</p>
