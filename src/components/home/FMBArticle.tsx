@@ -18,9 +18,9 @@ function FMBArticle() {
         </p>
         <TiStarburst className="text-primary" />
       </div>
-      <Slide direction="up" className="flex items-center justify-center">
+      <Slide triggerOnce={true} direction="up" className="flex items-center justify-center">
         <div className="grid lg:grid-cols-2 gap-[40px] w-full lg:w-[75%] mt-[50px]">
-          <div className="p-[20px] flex flex-col items-start justify-center">
+          <div className="flex flex-col items-start justify-center">
            <p className="font-inter font-[600] text-[40px] leading-[45px]">Excerpts from Fix My Business Bootcamp v1.0</p>
            <p className="font-inter font-[400] text-[16px] my-[20px]">At the Bootcamp, GreenStixz in collaboration with Learn Africa, Abasifreke Thompson, Kingsley Ime, Aniefon, and Daniel helped fixed common business problems for the business owners who attended the event.</p>
            <Link href="/blog/fix-my-business-bootcamp">

@@ -37,9 +37,11 @@ function Navbar() {
         ))}
       </div>
       <div className="flex items-center space-x-[20px]">
+        <a href="https://api.whatsapp.com/send?phone=2348023670860&text=Hi%20GreenStixz,%20I%20am%20interested%20in%20a%20quote%20for%20your%20service,%20my%20name%20is-%20service,%20my%20name%20is-" target="_blank" rel="noopener noreferrer">
         <button className="hidden lg:flex dark:bg-white font-[500] bg-primary dark:text-primary text-white font-inter p-[10px_20px] rounded-[5px]">
           Start Growing
-        </button>
+        </button></a>
+        
 
         <div className="hidden lg:flex">
           <ThemeSwitcher />
