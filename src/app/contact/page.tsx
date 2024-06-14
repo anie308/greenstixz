@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import { TiStarburst } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
@@ -6,8 +8,42 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
-
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 function Contact() {
+
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC as string
+
+  const sendMessage = () => {
+    try {
+      if (!name.trim() || !email.trim() || !message.trim()) {
+        toast.error("Please fill all fields")
+      } else {
+        const templateParams = {
+          user_name: name,
+          email: email,
+          message: message
+        }
+
+        emailjs.send(serviceId, templateId, templateParams, publicKey).then(() => {
+          toast.success("Email sent  successfully");
+          setEmail("")
+          setMessage("")
+          setName("")
+        })
+      }
+    } catch (error) {
+      console.log("error sending", error)
+    }
+  }
+
+  //hello@greenstixznetworks.com
   return (
     <div className="p-[50px_20px] gap-[40px] lg:p-[80px_80px] grid lg:grid-cols-2">
       <div className="">
@@ -107,6 +143,8 @@ function Contact() {
             type="text"
             className="h-[50px] border-b outline-none w-full mt-[5px] font-inter px-[10px]"
             placeholder="John Doe"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div className="w-full">
@@ -115,6 +153,8 @@ function Contact() {
             type="text"
             className="h-[50px] border-b outline-none w-full mt-[5px] font-inter px-[10px]"
             placeholder="name@example.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="w-full">
@@ -122,10 +162,12 @@ function Contact() {
           <textarea
             className="h-[150px] p-[10px] border-b outline-none w-full mt-[5px] font-inter"
             placeholder="Message..."
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </div>
         <div className="w-full flex items-center justify-end">
-          <button className="bg-primary h-[40px] px-[40px] rounded-[5px] text-white">
+          <button onClick={sendMessage} className="bg-primary h-[40px] px-[40px] rounded-[5px] text-white">
             Submit
           </button>
         </div>

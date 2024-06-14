@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
 import localFont from 'next/font/local'
-
+import  { Toaster } from 'react-hot-toast';
 const tripSans = localFont({
   src: [
     {
@@ -42,6 +42,7 @@ export default function RootLayout({
           <Footer/>
         </Providers>
       </body>
+      <Toaster className="font-inter font-[600]" />
     </html>
   );
 }
