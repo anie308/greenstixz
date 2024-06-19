@@ -15,16 +15,24 @@ export const getEntriesByType = async (type: string) => {
 
 export const getBlogPosts = async () => {
   const results = await getEntriesByType("blogPost");
-  const blogPosts = results.map((blog: { fields: any; }) => blog.fields);
+  const blogPosts = results.map((blog: { fields: any }) => blog.fields);
   return blogPosts;
 };
 
-
 export const getEntryBySlug = async (slug: any, type: any) => {
-    const queryOptions = {
-      content_type: type,
-      'fields.slug[match]': slug,
-    }
-    const queryResult = await client.getEntries(queryOptions)
-    return queryResult.items[0]
-  }
+  const queryOptions = {
+    content_type: type,
+    "fields.slug[match]": slug,
+  };
+  const queryResult = await client.getEntries(queryOptions);
+  return queryResult.items[0];
+};
+
+// New function to fetch all slugs
+export const getAllSlugs = async () => {
+  const results = await getEntriesByType("blogPost");
+  const slugs = results.map(
+    (item: { fields: { slug: any } }) => item.fields.slug
+  );
+  return slugs;
+};
