@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
 
 import { getAllSlugs, getEntryBySlug } from "@/service";
 import React, { useEffect } from "react";
