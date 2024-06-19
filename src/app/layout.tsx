@@ -42,7 +42,7 @@ export default function RootLayout({
           <Footer/>
         </Providers>
       </body>
-      <Toaster className="font-inter font-[600]" />
+      <Toaster  />
     </html>
   );
 }
