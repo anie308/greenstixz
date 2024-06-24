@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 
 import { getAllSlugs, getEntryBySlug } from "@/service";
 import React, { useEffect } from "react";
@@ -6,14 +7,6 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import NewsLetter from "@/components/NewsLetter";
 import { CiUser } from "react-icons/ci";
 
-
-// Function to generate static params
-export async function generateStaticParams() {
-  const allSlugs = await getAllSlugs(); // Fetch all slugs from your data source
-  return allSlugs.map((slug: string) => ({
-    slug,
-  }));
-}
 
 
 function SinglePost({ params }: { params: { slug: string } }) {
