@@ -90,11 +90,12 @@ const links = [
     to: "/about",
   },
   {
-    title: "Contact",
-    to: "/contact",
-  },
-  {
     title: "Blog",
     to: "/blog",
   },
+  {
+    title: "Contact",
+    to: "/contact",
+  },
+ 
 ];

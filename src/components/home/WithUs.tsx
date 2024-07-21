@@ -15,22 +15,22 @@ function WithUs() {
         </p>
         <TiStarburst className="text-primary" />
       </div>
-      <div className="flex flex-col mt-[20px] items-center justify-center">
-        <p className="text-center leading-[40px] lg:leading-[70px] dark:text-white text-[#0B0C0C] font-inter text-[30px]  lg:text-[45px] font-[800]">
+      <div className="flex flex-col mt-[20px] items-start lg:items-center justify-center">
+        <p className="text-start lg:text-center leading-[40px] lg:leading-[70px] dark:text-white text-[#0B0C0C] font-inter text-[30px]  lg:text-[45px] font-[800]">
           Activate Your Brand&apos;s Digital Revolution
         </p>
         <div className="flex flex-col items-center justify-center space-y-[20px] mt-[20px] w-full lg:w-[60%]">
-          <p className="font-inter text-center">
+          <p className="font-inter text-start lg:text-center">
             Emerging businesses often find themselves lost, trying really hard
             but not getting noticed. They lack clear direction and the support
             needed to grow, stopping them from making a real impact.
           </p>
-          <p className="font-inter text-center">
+          <p className="font-inter text-start lg:text-center">
             That’s when GreenStixz steps in. We’re like a friendly guide in this
             digital jungle, not just providing services but becoming a strategic
             partner for businesses like yours.
           </p>
-          <p className="font-inter text-center">
+          <p className="font-inter text-start lg:text-center">
             Success is more than just a good idea; it’s a journey. With
             GreenStixz, you get ongoing support, smart guidance, and a
             commitment to helping your business grow and make a difference

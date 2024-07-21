@@ -17,7 +17,7 @@ function About() {
           </p>
           <TiStarburst className="text-primary" />
         </div>
-        <p className="font-inter text-[20px] text-center mt-[20px]">
+        <p className="font-inter text-[20px] text-start lg:text-center mt-[20px]">
           GreenStixz is not just a service provider – we are architects of
           digital transformation, <br className="hidden lg:block" /> dedicated
           to reshaping your brand’s online destiny. We’re your strategic partner

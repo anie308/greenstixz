@@ -65,9 +65,7 @@ function Blog() {
               Our Articles
             </p>
             <p className="font-inter">
-              Sed accumsan sem cursus luctus porta. amem Phasellu du enim,
-              efficitur quis velit ac, fringilla posuere leo fusci ullamcorper
-              id porent gone this way.
+              Here you&apos;ll find exciting stories, tips, and insights to help you grow your business.
             </p>
           </div>
           <Link href="/blog" className="underline flex items-center font-inter">
